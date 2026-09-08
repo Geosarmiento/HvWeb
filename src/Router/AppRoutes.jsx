@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import MainLayout from "../Layouts/MainLayout.jsx";
 import Hero from "../Pages/Hero/Hero";
 import About from "../Pages/About/About";
-import Projects from "../pages/Projects/Proyect";
+import Projects from "../Pages/Projects/Project";
 import Contact from "../Pages/Contact/Contact";
 import NotFound from "../Pages/NotFound/NotFound";
 import { AnimatePresence } from "motion/react";
@@ -25,7 +25,7 @@ function AppRoutes() {
             <Route path="*" element={<PageTransition><NotFound /></PageTransition>}/>
           </Route>
         </Routes>
-        
+
     </AnimatePresence>
         </>
   );

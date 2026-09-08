@@ -17,10 +17,10 @@ const NavBar = () => {
         {/* MENÚ DE NAVEGACIÓN */}
         <ul className={`navbar-menu ${isOpen ? 'is-active' : ''}`}>
 
-            <Link to="/" onClick={() => setIsOpen(true)}>Hero</Link>
-            <Link to="/about" onClick={() => setIsOpen(true)}>About</Link>
-            <Link to="/projects" onClick={() => setIsOpen(true)}>Projects</Link>
-            <Link to="/contact" onClick={() => setIsOpen(true)}>Contact</Link>
+            <Link to="/"          onClick={() => setIsOpen(true)}>Hero</Link>
+            <Link to="/about"     onClick={() => setIsOpen(true)}>About</Link>
+            <Link to="/projects"  onClick={() => setIsOpen(true)}>Projects</Link>
+            <Link to="/contact"   onClick={() => setIsOpen(true)}>Contact</Link>
       </ul>
 
         {/* BOTÓN HAMBURGUESA  */ }

@@ -1,43 +1,16 @@
-import { useState, useEffect } from 'react'
-import { supabase } from './utils/supabase'
+import { supabase } from '../utils/supabase'
 
+export async function getDesign() {
+  const { data, error } = await supabase
+    .from('design')
+    .select('*')
 
+  if (error) {
+    console.error('Error obteniendo diseños:', error)
+    return []
+  }
 
+  console.log('Datos recibidos:', data)
 
-const [design, setDesign] = useState([])
-  
-
-  useEffect(() => {
-    async function getDesign() {
-      const { data: design } = await supabase.from('design').select()
-
-      if (design) {
-        setDesign(design)
-      }
-    }
-
-    getDesign()
-
-  
-  }, [])
-
-
-const GetData = () => {
-  return (
-    <div>
-        <div className="design">
-      {design.map((item) => (
-        <div key={item.id}>
-         
-           <img src={item.image} width="100%" height="auto" />
-            <p>{item.title}</p>
-          </div>
-        
-      ))}
-    </div>
-      
-    </div>
-  )
+  return data
 }
-
-export default GetData

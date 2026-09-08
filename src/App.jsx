@@ -1,37 +1,30 @@
-import { useState, useEffect } from 'react'
-import { supabase } from './utils/supabase'
 
-export default function App() {
-  const [design, setDesign] = useState([])
-  
+import NavBar from './Components/NavBar/NavBar.jsx'
+import Hero from './Seccions/Hero/Hero.jsx'
+import About from './Seccions/About/About.jsx'
+import Proyect from './Seccions/Proyect/Proyect.jsx'
+import Contact from './Seccions/Contact/Contact.jsx'
 
-  useEffect(() => {
-    async function getDesign() {
-      const { data: design } = await supabase.from('design').select()
 
-      if (design) {
-        setDesign(design)
-      }
-    }
 
-    getDesign()
-
-  
-  }, [])
-
-    console.log(design)
-   
-
+const App = () => {
   return (
-    <div className="design">
-      {design.map((item) => (
-        <div key={item.id}>
-         
-           <img src={item.image} width="250px" height="auto" />
-            <p>{item.title}</p>
-          </div>
-        
-      ))}
+    <div>
+      <NavBar/>
+      <Hero/>
+      <About/>
+      <Proyect/>
+      <Contact/>
     </div>
   )
 }
+
+export default App
+
+
+
+
+
+
+
+  

@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import { useState } from 'react';
 import './NavBar.css';
 import { Menu } from 'lucide-react';
+
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -10,40 +12,32 @@ const NavBar = () => {
 
       <nav className="navbar-container">
         {/* LOGO O NOMBRE */}
-        <a href="#hero" className="navbar-logo">
-          Gs<span className="logo">.</span>
-        </a>
+        <Link to="/" className="navbar-logo">Gs<span className="logo">.</span></Link>
 
         {/* MENÚ DE NAVEGACIÓN */}
         <ul className={`navbar-menu ${isOpen ? 'is-active' : ''}`}>
-          <li>
-            <a href="#about" onClick={() => setIsOpen(true)}>About</a>
-          </li>
-          <li>
-            <a href="#proyect" onClick={() => setIsOpen(true)}>Projects</a>
-          </li>
-          <li>
-            <a href="#skills" onClick={() => setIsOpen(true)}>Skills</a>
-          </li>
-          <li>
-            <a href="#contact" onClick={() => setIsOpen(true)}>Contact</a>
-          </li>
-        </ul>
 
-        {/* BOTÓN HAMBURGUESA PARA MÓVILES */ }
-        <button 
+            <Link to="/" onClick={() => setIsOpen(true)}>Hero</Link>
+            <Link to="/about" onClick={() => setIsOpen(true)}>About</Link>
+            <Link to="/projects" onClick={() => setIsOpen(true)}>Projects</Link>
+            <Link to="/contact" onClick={() => setIsOpen(true)}>Contact</Link>
+      </ul>
+
+        {/* BOTÓN HAMBURGUESA  */ }
+      
+        
+        <Menu 
           className={`navbar-toggle ${isOpen ? 'is-active' : ''}`}
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Abrir menú"
-        >
-
-        <Menu color="white"/>
-
-        </button>
-
-
+          />
       </nav>
+
+
+      
+ 
     </header>
+
+    
   );
 }
 

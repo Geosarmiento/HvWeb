@@ -7,11 +7,9 @@ const Header = () => {
 
 
     <div className='header'>
-        <h2>GS</h2>
+      
 
         <NavBar/>    
-
-        <button>Menu</button>
 
     </div>
   )

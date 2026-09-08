@@ -6,11 +6,29 @@ export async function getDesign() {
     .select('*')
 
   if (error) {
-    console.error('Error obteniendo diseños:', error)
     return []
   }
 
-  console.log('Datos recibidos:', data)
+ 
 
   return data
 }
+
+
+
+export async function getThreeD() {
+  const { data, error } = await supabase
+    .from('3d')
+    .select('*')
+
+
+
+  if (error) {
+    return []
+  }
+ 
+
+  return data
+}
+
+

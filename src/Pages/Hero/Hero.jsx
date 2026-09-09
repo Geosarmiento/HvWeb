@@ -1,5 +1,9 @@
-import './Hero.css'
-import { motion } from "motion/react"
+import './Hero.scss'
+import Effect from "../../Components/Effect/Effect";
+
+
+import Button from "../../Components/Button/Button.jsx"
+
 
 const Hero = () => {
   return (
@@ -7,15 +11,11 @@ const Hero = () => {
     <div className='hero-container' id='hero'
     >
 
-    <motion.h1 
-       initial={{  opacity: 0 , y: -40 }}
-       animate={{  opacity: 1, y: 0 }}
-       transition={{ duration: 0.8, ease: "easeInOut"}}>
-
-          Graphic Designer 
+    <h1>
+         Graphic Designer 
             Frontend Designer 
             & 3D Designer
-             </motion.h1>
+             </h1>
 
     <p>
     Technologist in Multimedia
@@ -23,17 +23,16 @@ const Hero = () => {
     combining design, technology, 3D and hands-on production.
     </p>
 
-    <motion.button className='btn' 
-       initial={{  opacity: 0 , y: 40 }}
-       animate={{  opacity: 1, y: 0 }}
-       transition={{ duration: 0.8, ease: "easeInOut"}}>
 
+    
+<Button/>
 
-
-      View Work
-    </motion.button>
-
+<Effect/>
+   
     </div>
+
+
+
   )
 }
 

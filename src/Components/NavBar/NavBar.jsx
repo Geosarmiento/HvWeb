@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from 'react';
-import './NavBar.css';
+import './NavBar.scss';
 import { Menu } from 'lucide-react';
 
 

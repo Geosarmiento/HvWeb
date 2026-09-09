@@ -16,7 +16,7 @@ const Project_Design = () => {
     loadThreeD()
   }, [])
 
-//---------------------------//
+
   
 
   return (

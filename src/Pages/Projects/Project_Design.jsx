@@ -16,7 +16,7 @@ const Project_Design = () => {
     loadDesign()
   }, [])
 
-//---------------------------//
+
   
 
   return (
@@ -27,12 +27,14 @@ const Project_Design = () => {
         {design.map((item) => (
 
         <div key={item.id}>
-          <img  src={item.image} alt={item.title} width="100%" />
+          <img  src={item.image} alt={item.title} width="100%"/>
+          <p>{item.title}</p>
+          <small>{item.description}</small>
         </div>
       ))}
      
   </div>
-  //--------------------------------//
+
 
 
 

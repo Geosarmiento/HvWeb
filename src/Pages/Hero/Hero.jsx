@@ -23,11 +23,10 @@ const Hero = () => {
     combining design, technology, 3D and hands-on production.
     </p>
 
-
-    
-<Button/>
+<Button to="/projects"/>
 
 <Effect/>
+
    
     </div>
 

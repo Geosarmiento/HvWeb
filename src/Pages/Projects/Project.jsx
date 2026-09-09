@@ -1,6 +1,7 @@
 import "../../styles/_globales.scss" 
 import Project_Design from "./Project_Design";
 import Project_3d from "./Project_3d";
+import Effect from "../../Components/Effect/Effect";
 
 
 const Projects = () => {
@@ -23,7 +24,7 @@ const Projects = () => {
             
     </div>
       
-
+<Effect/>
 
     </div>
   )

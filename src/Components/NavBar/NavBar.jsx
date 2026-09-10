@@ -19,10 +19,11 @@ const NavBar = () => {
         <Link to="/" className="navbar-logo">Gs<span className="logo">.</span></Link>
 
         {/* MENÚ DE NAVEGACIÓN */}
+        
         <ul className={`navbar-menu ${isOpen ? 'is-active' : ''}`}>
           
           <div className="closed">
-          <Link to="/"  onClick={() => setIsOpen(true)}><X/></Link>
+            <Link to="/"  onClick={() => setIsOpen(true)}><X/></Link>
           </div>
 
             <Link to="/"          onClick={() => setIsOpen(true)}>Home  </Link>
@@ -31,8 +32,6 @@ const NavBar = () => {
             <Link to="/contact"   onClick={() => setIsOpen(true)}>Contact</Link>
       
       <div className="redes">
-
-          
 
           <Link to="/contact"><img src={mailIcon }
             alt="mail"

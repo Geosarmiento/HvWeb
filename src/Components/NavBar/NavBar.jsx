@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 import './NavBar.scss';
 import { Menu, X } from 'lucide-react';
+import mailIcon from "../../assets/mail.svg"
+import linkedinIcon from "../../assets/linkedin.svg"
+import githubIcon from "../../assets/github.svg"
+
 
 
 const NavBar = () => {
@@ -27,14 +31,27 @@ const NavBar = () => {
             <Link to="/contact"   onClick={() => setIsOpen(true)}>Contact</Link>
       
       <div className="redes">
-      <span>Ins</span>
-      <span>Face</span>
 
-      <span>Github</span>
-
-      <span>Link</span>
-
+          <Link to="/contact"><img src={mailIcon }
+            alt="mail"
+            width="28"
+            height="28"
+           /></Link>
+          <br />
+          <Link to="/contact"><img src={linkedinIcon}
+            alt="mail"
+            width="28"
+            height="28"
+          /></Link>
+          <br />
+          <Link to="/contact"><img src={githubIcon}
+            alt="mail"
+            width="28"
+            height="28"
+            /></Link>    
+      
     </div>
+
       </ul>
       
 

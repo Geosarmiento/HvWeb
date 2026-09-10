@@ -32,18 +32,20 @@ const NavBar = () => {
       
       <div className="redes">
 
+          
+
           <Link to="/contact"><img src={mailIcon }
             alt="mail"
             width="28"
             height="28"
            /></Link>
-          <br />
+          
           <Link to="/contact"><img src={linkedinIcon}
             alt="mail"
             width="28"
             height="28"
           /></Link>
-          <br />
+          
           <Link to="/contact"><img src={githubIcon}
             alt="mail"
             width="28"

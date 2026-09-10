@@ -109,7 +109,7 @@
     top: 0px;
     left: 100%;
     width: 150px;
-    height: calc(100vh - 40px);
+    height: calc(100vh);
     background: linear-gradient(45deg, #1b68b3 0%, #031b4e 100%);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #0e4985;
@@ -133,14 +133,20 @@
   line-height: 2.5;
   transition: color 0.3s ease;
   text-align: left;
-}
+
+    
+  }
   .redes{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 28px;
     align-items: center;
     bottom: 0px;
     justify-content: center;
+
+  }
+  .redes a:hover{
+   scale: 1.2;
 
   }
 }

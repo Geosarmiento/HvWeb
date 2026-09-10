@@ -13,7 +13,7 @@ const Hero = () => {
 
     <h1>
          Graphic Designer 
-            Frontend Designer 
+            <div className="textDegrades">Frontend Designer </div>
             & 3D Designer
              </h1>
 

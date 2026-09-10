@@ -85,11 +85,23 @@ button {
     transition: background-color 0.3s ease;
     bottom: 20px;
   cursor: pointer;
+   background: linear-gradient(90deg, #1b68b3 0%, #031b4e 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #0e4985;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+
+.textDegrades{
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #1b68b3 0%, #031b4e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @media (max-width: 1024px) {

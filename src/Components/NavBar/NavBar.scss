@@ -70,6 +70,12 @@
 .redes{
   display: none;
 }
+ .closed{
+    display: none;
+    position: absolute;
+    top:18px;
+    right: 34px;
+  }
 
 
 
@@ -83,10 +89,12 @@
 
 
   .closed{
+    display: block;
     position: absolute;
     top:18px;
     right: 34px;
   }
+
    .redes{
     position: absolute;
     top: 600px;

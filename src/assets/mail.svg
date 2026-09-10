@@ -5,9 +5,8 @@
     <style>
       .st0 {
         fill: none;
-        stroke: #000;
-        stroke-linecap: round;
-        stroke-linejoin: round;
+        stroke: #fff;
+        stroke-miterlimit: 10;
         stroke-width: 2px;
       }
     </style>

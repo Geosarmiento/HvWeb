@@ -1,7 +1,6 @@
 import "./Contact.scss";
 import { Link } from "react-router-dom"
 import { MapPin,MessageCircleMore  } from 'lucide-react';
-
 import { GitHub, Linkedin, Mail }from "../../Components/Icon/Icons.jsx"
 
 const Contact = () => {
@@ -17,27 +16,25 @@ const Contact = () => {
         </p>
       </div>
 
-
-
 <div className="form_container">
   <h2>Send Message</h2>
       
     <div className="form_fondo">
       <form className="form">
          <label> Your name</label>
-         <input type="text" placeholder="   your name"/>  
-<br />
+         <input type="text" placeholder="your name"/>  
+
          <label> Email</label>
-         <input type="email" placeholder="   your@mail.com"/> 
-      <br />
-         <label> Message</label>
-         <input type="text" placeholder="  Tell us about your proyect... "/> 
-<br />
+         <input type="email" placeholder="your@mail.com"/> 
+      
+         <label > Message</label>
+         <textarea type="text" className="textarea" placeholder="   "/> 
+
          <button>Send Message</button>    
         
       </form>
 
-<div>
+<div className="information_container">
   <h2> Contact Information</h2>
 
     <div className="icon_contact">
@@ -49,7 +46,7 @@ const Contact = () => {
     </div>
 
     <div className="icon_contact">
-      <MessageCircleMore/>
+      <span><MessageCircleMore/></span>
       <div>
         <small>WhatsApp</small>
         <p>+48 510 004 762</p>
@@ -57,29 +54,30 @@ const Contact = () => {
     </div>
 
     <div className="icon_contact">
-      <MapPin />
+      <span><MapPin/></span>
       <div>
         <small>Location</small>
         <p>Poland</p>
       </div>
     </div>
 
-</div>
 
-
-
-<div className="fallow">
+    <div className="fallow">
   <h3>Fallow Us</h3>
-    <div>
-      <Link to="https://github.com/Geosarmiento"><GitHub className="logoGitHub"/></Link>
-      <Link to="https://github.com/Geosarmiento"><Mail className="logoGitHub"/></Link>
-      <Link to="https://github.com/Geosarmiento"><Linkedin className="logoGitHub"/></Link>
 
-    
-    
+    <div className="icon_fallow">
+      <Link to="https://github.com/Geosarmiento"><GitHub className="logoGitHub"/></Link>
+      <Link to="/contact"><Mail className="logoGitHub"/></Link>
+      <Link to="https://linkedin.com"><Linkedin className="logoGitHub"/></Link>
     </div>
 
 </div>
+
+</div>
+
+
+
+
 
     </div> 
 

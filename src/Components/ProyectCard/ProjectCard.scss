@@ -1,6 +1,6 @@
 .project-card {
   margin: auto;
-  width: 350px;
+  width: 345px;
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 20px;
@@ -41,4 +41,25 @@
   button {
     margin-top: 20px;
   }
+}
+.projects {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding:  24px;
+
+  &__track {
+    display: flex;
+    gap: 20px; /* Asegúrate de que este gap coincida con el cálculo de cardWidth */
+    will-change: transform;
+  }
+}
+
+.projects__controls {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 24px;
+
+
 }

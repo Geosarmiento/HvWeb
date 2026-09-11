@@ -1,5 +1,6 @@
 import "./Contact.scss";
 import { Link } from "react-router-dom"
+import { MapPin,MessageCircleMore  } from 'lucide-react';
 
 import { GitHub, Linkedin, Mail }from "../../Components/Icon/Icons.jsx"
 
@@ -40,15 +41,15 @@ const Contact = () => {
   <h2> Contact Information</h2>
 
     <div className="icon_contact">
-      <span>logo</span>
+      <span><Mail/></span>
       <div>
         <small>Email</small>
-        <p>Jova29@gmail.com</p>
+        <p>Jhova29@gmail.com</p>
       </div>
     </div>
 
     <div className="icon_contact">
-      <span>logo</span>
+      <MessageCircleMore/>
       <div>
         <small>WhatsApp</small>
         <p>+48 510 004 762</p>
@@ -56,7 +57,7 @@ const Contact = () => {
     </div>
 
     <div className="icon_contact">
-      <span>logo</span>
+      <MapPin />
       <div>
         <small>Location</small>
         <p>Poland</p>

@@ -1,5 +1,7 @@
 import './About.scss'
-import { Blender } from "../../Components/Icon/Icons.jsx"
+import { Blender, Photoshop, Illustrator, JavaScript, Css, React
+
+ } from "../../Components/Icon/Icons.jsx"
 
 
 
@@ -24,6 +26,16 @@ const About = () => {
 
     <div className="skills">
        <Blender/>
+       <Photoshop/>
+       <Illustrator/>
+       <JavaScript/>
+       <Css/>
+       <React/>
+
+
+       {/*
+      
+*/}
 
     </div>
 

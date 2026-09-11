@@ -1,7 +1,9 @@
 import "../../styles/_globales.scss" 
 import "./Project.scss"
-import Effect from "../../Components/Effect/Effect";
 import { Windows, Mac} from "../../Components/Icon/Icons.jsx"
+import projects from "../../Data/ProjectData.js";
+import ProjectCard from "../../Components/ProyectCard/ProjectCard.jsx";
+
 
 
 const Projects = () => {
@@ -23,31 +25,16 @@ const Projects = () => {
 
       </div>
 
-
-      <div className="img_proyects_container">
-
-          <div className="img_container">
-
-            <div className="uno">1</div>
-
-
-            <div className="uno">2</div>
-
-            
-            <div className="uno">3</div>
-
-          </div>
+    <ProjectCard project={projects[0]} />
 
 
 
-      </div>
-
+ 
    
 
 
    
       
-<Effect/>
 
     </div>
   )

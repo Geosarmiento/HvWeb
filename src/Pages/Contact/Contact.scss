@@ -4,14 +4,57 @@
 
 }
 
+.form_fondo{
+  width: 94%;
+  height: auto;
+  background-color: aliceblue;
+  border-radius: 12px;
+  padding: 8px;
+  padding-top: 24px;
+  margin: auto;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+
+  label{
+    color: #a0a0a0;
+  }
+  input{
+    all: unset;
+    border-radius: 8px;
+    height: 42px;
+    border: 1px solid #a0a0a0;
+
+    
+
+  }
+}
+
+.icon_contact{
+  display: flex;
+  gap: 8px;
+  padding-left: 24px;
+
+}
+
+
+
+
+
+
+/*
 .intro_contact{
   margin: auto;
   width: 90%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: flex;http://localhost:5173/contact
+  flex-direction: column;http://localhost:5173/contact
   padding-top: 250px;
   text-align: center;
 
 }
-
+*/

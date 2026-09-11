@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 import './NavBar.scss';
-import { Menu, X } from 'lucide-react';
-import mailIcon from "../../assets/mail.svg"
-import linkedinIcon from "../../assets/linkedin.svg"
-import githubIcon from "../../assets/github.svg"
+import { Mail, Menu, X } from 'lucide-react';
+import { Linkedin, GitHub } from "../Icon/Icons.jsx"
 
 
 
@@ -33,23 +31,11 @@ const NavBar = () => {
       
       <div className="redes">
 
-          <Link to="/contact"><img src={mailIcon }
-            alt="mail"
-            width="28"
-            height="28"
-           /></Link>
+          <Link to="/contact"><Linkedin/></Link>
+           <Link to="/contact"><Mail/></Link>
+            <Link to="/contact"><GitHub/></Link>
           
-          <Link to="/contact"><img src={linkedinIcon}
-            alt="mail"
-            width="28"
-            height="28"
-          /></Link>
-          
-          <Link to="/contact"><img src={githubIcon}
-            alt="mail"
-            width="28"
-            height="28"
-            /></Link>    
+         
       
     </div>
 

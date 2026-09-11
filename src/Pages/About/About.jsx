@@ -1,10 +1,5 @@
 import './About.scss'
-import icon_photoshop from "../../assets/icon_photoshop.svg"
-import icon_illustrator from "../../assets/icon_illustrator.svg"
-import icon_html from "../../assets/icon_html.svg"
-import icon_javaScript from "../../assets/icon_javaScript.svg"
-import icon_react from "../../assets/icon_react.svg"
-import icon_rhino from "../../assets/icon_rhino.svg"
+import { Blender } from "../../Components/Icon/Icons.jsx"
 
 
 
@@ -28,12 +23,7 @@ const About = () => {
       <p>Graphic Design · Frontend Development · UI Design · 3D Design · Interactive 3D · Responsive Design</p>
 
     <div className="skills">
-       <img src={icon_photoshop} alt="mail" width="28" height="28"/>
-       <img src={icon_illustrator} alt="mail" width="28" height="28"/>
-       <img src={icon_html} alt="mail" width="28" height="28"/>
-       <img src={icon_javaScript} alt="mail" width="28" height="28"/>
-       <img src={icon_react} alt="mail" width="28" height="28"/>
-       <img src={icon_rhino} alt="mail" width="28" height="28"/>
+       <Blender/>
 
     </div>
 

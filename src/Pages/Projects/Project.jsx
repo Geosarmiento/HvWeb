@@ -3,11 +3,12 @@ import "./Project.scss";
 import { Windows, Mac } from "../../Components/Icon/Icons.jsx";
 import projects from "../../Data/ProjectData.js";
 import ProjectCard from "../../Components/ProyectCard/ProjectCard.jsx";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { CircleArrowLeft, CircleArrowRight } from 'lucide-react';
 
 
 const Projects = () => {
+
   // 1. Clonar las tarjetas (primeras y últimas) para crear la ilusión de loop infinito
   const extendedProjects = [
     projects[projects.length - 1], // Clon del último al inicio
@@ -20,7 +21,7 @@ const Projects = () => {
   const [isTransitioning, setIsTransitioning] = useState(true);
   const trackRef = useRef(null);
 
-  const cardWidth = 344 + 20; // Ancho de card + gap (ajusta según tu CSS)
+  const cardWidth = 320 + 20; // Ancho de card + gap (ajusta según tu CSS)
 
   const nextProject = () => {
     if (activeIndex >= extendedProjects.length - 1) return;

@@ -4,7 +4,7 @@
     title: "Frontend Design",
     category: "3D / Frontend",
     description: "Configurador de camisetas 3D interactivo.",
-    image: "../../assets/foto.png",
+    image: "/images/projects/product-3d.jpg",
   },
   {
     id: 1,

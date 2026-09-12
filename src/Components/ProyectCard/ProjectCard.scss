@@ -1,6 +1,6 @@
 .project-card {
   margin: auto;
-  width: 320px;
+  min-width: 320px;
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 20px;
@@ -45,10 +45,11 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding:  24px 42px;
+  padding:  24px 25px;
 
   &__track {
     display: flex;
+    align-items: flex-start;
     gap: 20px; /* Asegúrate de que este gap coincida con el cálculo de cardWidth */
     will-change: transform;
 

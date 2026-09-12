@@ -26,9 +26,7 @@ const ProjectCard = ({ project }) => {
 
         <p>{project.description}</p>
 
-
-
-        <Link> Ver proyecto → </Link>
+        <Link to="/"> Ver proyecto → </Link>
       </div>
 
     </article>

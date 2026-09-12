@@ -60,15 +60,15 @@ const Projects = () => {
         <h1>Projects</h1>
         <p>Skills that combine design, technology, and creativity.</p>
       </div>
-
+<div className="center">
       <section className="projects">
         <div
           ref={trackRef}
           className="projects__track"
-          onTransitionEnd={handleTransitionEnd}
-          style={{
-            transform: `translateX(-${activeIndex * cardWidth}px)`,
-            transition: isTransitioning
+            onTransitionEnd={handleTransitionEnd}
+            style={{
+              transform: `translateX(-${activeIndex * cardWidth}px)`,
+                transition: isTransitioning
               ? "transform 0.4s ease-in-out"
               : "none", // Desactiva la transición durante el salto invisible
           }}
@@ -87,6 +87,7 @@ const Projects = () => {
         <CircleArrowRight onClick={nextProject} aria-label="Next Project"/>
       
       </div>
+    </div>
     </div>
   );
 };

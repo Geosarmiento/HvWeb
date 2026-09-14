@@ -1,4 +1,6 @@
 import './About.scss'
+
+
 import { Blender, Photoshop, Illustrator, JavaScript, Css, React
 
  } from "../../Components/Icon/Icons.jsx"
@@ -10,7 +12,22 @@ const About = () => {
 
 
     <div className='about-container' id='about'>
-      <div className="photo_perfil"> 
+
+
+  
+      
+      
+      <div className="photo_perfil">
+
+
+<div className="slider">
+
+  
+
+
+</div>
+
+
       </div>
     <br /> <br />
 

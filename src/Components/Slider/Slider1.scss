@@ -1,0 +1,123 @@
+.general {
+       width: 100%;
+       overflow: hidden;
+        }
+
+.swiper{    
+    max-width:350px ;
+    overflow: visible; 
+
+  
+
+
+// /* Estilos de las tarjetas (Slides) */
+    .swiper-slide {
+         border-radius: 12px; //Borde arriba de la imagen
+         transition: all 0.8s ease !important;
+         margin: auto;
+         scale: (0.8);
+        // min-width: 300px; /* Ajusta el ancho de la tarjeta */
+   
+
+    
+    /* Tarjetas inactivas (laterales) */
+    &:not(.swiper-slide-active) {
+      opacity: 0.5 !important; /* Reduce la opacidad de los lados */
+      filter: grayscale(80%) !important; /* Opcional: convierte en escala de grises los lados */
+    
+    }
+
+    /* Tarjeta activa (centro) */
+    &.swiper-slide-active {
+
+      opacity: 1 !important;
+      filter: grayscale(0%) !important;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .imagenes{
+        border-radius: 20px;
+        margin: auto;
+        width: 100%;
+     }
+     img{
+         background:
+        linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 70%Design Graphic
+        Design Graphic
+        Visual Creative
+        
+        Frontend Design
+        Frontend Design
+        Interface & Experience
+        
+        Design 3D
+        Design 3D
+        Modeling and Render
+        
+        Branding
+        B
+        ),
+     }
+}           
+}
+.title_container_card{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    border: 1px solid #020202;
+    .title_container{
+    position:absolute;
+    padding: 0px 20px;
+    bottom: 20px;
+}
+.p{
+    color: black;
+}
+}
+
+
+
+
+
+   
+
+  
+/* 3. Adaptación móvil */
+@media (max-width: 640px) {
+
+.general {
+       width: 100%;
+       overflow: hidden;
+        }
+//
+
+.swiper{
+    overflow: visible;
+    
+     
+    .swiper-horizontal{
+        min-width: 500px;
+        object-fit: cover;
+    }
+
+    .swiper-3d{
+        perspective: none;
+        
+     }
+}
+//
+.swiper-slide {
+     border-radius: 12px; //Borde arriba de la imagen
+     transition: all 0.8s ease !important;
+     //min-width: 280px; /* Ajusta el ancho de la tarjeta */
+     //height: auto; /* Ajusta la altura de la tarjeta */
+     margin: auto;
+     //left: -480px;
+      //flex-shrink: 0;
+
+    
+}        
+}

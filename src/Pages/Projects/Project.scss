@@ -2,6 +2,7 @@
   width: 100%;
   height: 100vh;
   padding-top: 90px;
+  align-items: center;
  
 }
 .intro_proyect{
@@ -9,6 +10,7 @@
   width: 90%;
   height: auto;
   text-align: center;
+  margin-bottom: 12px;
 
   h2{
       font-size: 2.5rem;
@@ -16,57 +18,12 @@
     }
 }
 
-.icon_proyects{
-  display: flex;
-  justify-content: center;
-  padding-bottom:  38px;
-}
-
-.icon_proyect{
-  color: rgb(19, 6, 131);
-  width: 32px;
-  height: 32px;
-}
-.icon_proyect:hover{
-  color: white;
-  width: 32px;
-  height: 32px;
-}
-
-
-.img_proyects_container{
-  width: 90%;
- 
-
-
-  .img_container{
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    gap: 8px;
-   
-  }
-
-
-  .uno{
-    width: 192px;
-    height: 320px;
-    background-color: aqua;
-    border-radius: 16px;
-    text-align: center;
-    
-
-  }
-
-  
-}
 
 
 //*destk *//
 
 @media  (min-width: 1080px) {
 
-  
 .center {
   width: 800px;
   margin: auto;
@@ -83,3 +40,7 @@
 
 
 }
+
+
+
+

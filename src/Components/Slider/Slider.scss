@@ -1,0 +1,54 @@
+/* 1. Contenedor exterior */
+.general {
+  margin: 0 auto;
+  width: 100% !important;
+  max-width: 1200px;
+  overflow: visible;
+}
+
+/* 2. Configuración general del Swiper */
+ .Slider {
+    overflow: visible !important;
+    padding: 40px 0;
+
+  /* Estilos de las tarjetas (Slides) */
+  .swiper-slide {
+    width: 280px !important; /* Ajusta el ancho de la tarjeta */
+    height: 380px !important; /* Ajusta la altura de la tarjeta */
+    transition: all 0.4s ease !important;
+    border-radius: 16px;  /* Ajusta el borde de la tarjeta */
+    overflow: hidden;
+
+    .imagenes {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+
+    /* Tarjetas inactivas (laterales) */
+    &:not(.swiper-slide-active) {
+      opacity: 0.4 !important; /* Reduce la opacidad de los lados */
+      filter: grayscale(80%) !important; /* Opcional: convierte en escala de grises los lados */
+    }
+
+    /* Tarjeta activa (centro) */
+    &.swiper-slide-active {
+      opacity: 1 !important;
+      filter: grayscale(0%) !important;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+/* 3. Adaptación móvil */
+@media (max-width: 640px) {
+  .Slider {
+    .swiper-slide {
+      width: 220px !important;
+      height: 300px !important;
+    }
+  }
+}
+
+ 

@@ -1,5 +1,4 @@
 import './Hero.scss'
-import Effect from "../../Components/Effect/Effect";
 
 
 import Button from "../../Components/Button/Button.jsx"
@@ -8,13 +7,12 @@ import Button from "../../Components/Button/Button.jsx"
 const Hero = () => {
   return (
 
-    <div className='hero-container' id='hero'
-    >
+    <div className='hero-container' id='hero'>
 
     <h1>
          Graphic Designer 
             <div className="textDegrades">Frontend Designer </div>
-            & 3D Designer
+              & 3D Designer
              </h1>
 
     <p>
@@ -25,7 +23,7 @@ const Hero = () => {
 
 <Button to="/projects"/>
 
-<Effect/>
+
 
    
     </div>

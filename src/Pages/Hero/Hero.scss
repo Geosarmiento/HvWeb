@@ -7,13 +7,45 @@
   align-items: center;
   text-align: center;
   padding: 8px;
- 
+       
+   h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-bottom: 12px;
+    
+  }
+  .textDegrades{
+    font-weight: 600;
+  }
+   p{
+    max-width: 500px;
+    margin: 0px auto;
+  }
 
 }
 
-.hero-container p{
-  padding-bottom: 100px;
-  color: white;
+
+
+//*Destop*//
+
+@media (min-width: 1024px) {
+  .intro_project{
+    margin: auto;
+    text-align: center;
+    p{
+    max-width: 800px;
+    margin: auto;
+  }
 }
 
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 28px;
+    
+  }
+}
 

@@ -1,5 +1,5 @@
 import './About.scss'
-
+import Button from "../../Components/Button/Button.jsx"
 
 import { Blender, Photoshop, Illustrator, JavaScript, Css, React
 
@@ -9,39 +9,32 @@ import { Blender, Photoshop, Illustrator, JavaScript, Css, React
 
 const About = () => {
   return (
-
+    <>
 
     <div className='about-container' id='about'>
 
+          <div className="titulo">
+            <h1>Turning <span>Ideas</span> 
+            <h1>Into visual experiences</h1></h1>
+          </div>
 
-  
-      
-      
-      <div className="photo_perfil">
+          <p>Creative and technological studio dedicated to designing exceptional digital experiences with precision and storytelling.</p>
+        
+        <div  className="button">  <Button/></div>
 
+    </div>  
 
-<div className="slider">
+    <div className="about">
+        <h2>Multidisciplinary Graphic Designer and Frontend Designer with experience in visual communication, digital interface design, frontend development support, 3D visualization and graphic production. Technologist in Multimedia Production with a practical profile combining design, technology, 3D and hands-on production.</h2>
+    </div>
 
-  
+   
+<section className="sectionSkills">
+      <h2 className="titleSkills">Skill</h2>
 
-
-</div>
-
-
-      </div>
-    <br /> <br />
-
-
-
-      <h1>About Me</h1>
-      <p>Multidisciplinary Graphic Designer and Frontend Designer
-        with experience in visual communication, digital interface design, frontend development support, 3D visualization and graphic production. Technologist in Multimedia Production with a practical profile combining design, technology, 3D and hands-on production.</p>
-    <br /> <br /> 
-
-      <h2>Skills</h2>
       <p>Graphic Design · Frontend Development · UI Design · 3D Design · Interactive 3D · Responsive Design</p>
 
-    <div className="skills">
+    
        <Blender/>
        <Photoshop/>
        <Illustrator/>
@@ -49,14 +42,13 @@ const About = () => {
        <Css/>
        <React/>
 
-
-       {/*
+</section>
       
-*/}
+ 
 
-    </div>
+   
 
-    <br />
+   
     <h3>Experience</h3>
     <p>Branding</p>
     <p>Marketing</p>
@@ -67,7 +59,9 @@ const About = () => {
 
 
 
-    </div>
+   
+    </>
+
   )
 }
 

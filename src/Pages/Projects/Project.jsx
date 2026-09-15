@@ -10,17 +10,26 @@ const Projects = () => {
   return (
     <>
     <div className="project-container">
-      <div className="intro_proyect">
-        <h1>Projects</h1>
-        <p>Skills that combine design, technology, and creativity.</p>
-      </div>
-    
+
+    <div className="arreglo">
+        <div className="intro_project">
+          <h1>Projects</h1>
+          <p>Skills that combine design, technology, and creativity.</p>
+          
+                <p>From visual identity and graphic design to frontend development and 3D, I combine different disciplines to transform ideas into engaging digital experiences</p>
+        </div>
 
         <div className="slider">
-          <Slider1/>
-      </div>
-
+            <Slider1/>
+        </div>
+    
+    
     </div>
+    </div>
+
+      
+
+
     </>
   );
 };

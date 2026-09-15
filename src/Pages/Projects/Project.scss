@@ -1,21 +1,32 @@
 .project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100vh;
-  padding-top: 90px;
   align-items: center;
  
 }
-.intro_proyect{
+.intro_project{
   margin: auto;
   width: 90%;
   height: auto;
   text-align: center;
   margin-bottom: 12px;
 
+  h1{
+    margin-bottom: 12px;
+  }
+
   h2{
       font-size: 2.5rem;
       line-height: 0.9;
     }
+}
+
+.arreglo{
+  width: 100%;
+
 }
 
 

@@ -31,7 +31,7 @@ const Slider1 = () => {
       initialSlide={2} // Elije la imagen activa
       grabCursor={true} //Cambia el mouse a mano
       slidesPerView={"auto"} // Cuantas imagenes se muestran
-      spaceBetween={-20}// espaciado entre imagenes
+      spaceBetween={-30}// espaciado entre imagenes
       touchRatio={0.5} // Reduce la velocidad/sensibilidad del arrastre manual (0.5 = la mitad de velocidad)
       speed={600} // Duración de la animación de transición en milisegundos (más alto = más suave)
    

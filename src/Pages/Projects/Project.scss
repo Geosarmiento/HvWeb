@@ -1,57 +1,25 @@
-.project-container {
+@use "../../styles/_globales.scss" as *;
+
+.project-container{
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
   align-items: center;
- 
-}
-.intro_project{
-  margin: auto;
-  width: 90%;
-  height: auto;
   text-align: center;
-  margin-bottom: 12px;
+  
 
-  h1{
-    margin-bottom: 12px;
-  }
+    
+     
+}
+.project_slider{
+  width: 100%;
+}
 
-  h2{
-      font-size: 2.5rem;
-      line-height: 0.9;
+.intro_project{
+  p{
+      margin: 0px auto;
+      padding: 12px 24px;
     }
 }
-
-.arreglo{
-  width: 100%;
-
-}
-
-
-
-//*destk *//
-
-@media  (min-width: 1080px) {
-
-.center {
-  width: 800px;
-  margin: auto;
-  overflow: hidden;
-  padding:  24px 25px;
-
- 
-}
-.projects__track{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-
-}
-
-
-
-

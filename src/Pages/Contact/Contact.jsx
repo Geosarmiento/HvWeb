@@ -5,9 +5,10 @@ import { GitHub, Linkedin, Mail }from "../../Components/Icon/Icons.jsx"
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <>
+    <section className="contact-container">
       
-      <div className="intro_contact">
+      <div className="intro-contact">
         <h1> Let's Talk</h1>
 
         <p> Have a project in mind? 
@@ -83,7 +84,9 @@ const Contact = () => {
 
 
 </div>
-    </div>
+    </section>
+
+    </>
   )
 }
 

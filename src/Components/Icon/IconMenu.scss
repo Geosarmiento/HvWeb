@@ -1,0 +1,59 @@
+.menu-toggle-btn {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-icon {
+  width: 28px;
+  height: 20px;
+
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+
+  background-color: currentColor;
+  border-radius: 2px;
+
+  transition:
+    transform 0.3s ease,
+    top 0.3s ease;
+}
+
+.line-top {
+  top: 3px;
+}
+
+.line-bottom {
+  top: 15px;
+}
+
+/* =========================
+   MENÚ ABIERTO
+========================= */
+
+/* Estado activo cuando isOpen = true */
+.menu-toggle-btn.is-open {
+
+  .line-top {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+
+  .line-bottom {
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+}

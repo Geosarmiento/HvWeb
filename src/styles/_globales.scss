@@ -1,65 +1,22 @@
-/*
-FONT-----
-h1  Orlean 500 
-    Orlean 400
-    letter-spacing: 4.5px;
-    max-width: 134rem;
-    justify-self: center;
-    text-align: center;
-    color: #101820;---- NEGRO
-    font-family: Orlean;
-    font-size: min(15rem,15vh);
-    font-weight: 400;
-H2 
-font-size: 6.5rem;
-
-H3
-color: #101820;
-  font-family: Orlean;
-  font-size: 6.5rem;
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: -.015em;
-
-P
-color: #8a8f8d; -------GRIS
-  font-family: Aventa;
-  font-size: 3.5rem;
-  font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 3.6rem;
-
-
-  MOBILE------
-    font-size: 3.8rem;
-    letter-spacing: -.01em;
-    line-height: 1;
-    max-width: 33rem;
-
-    font-weight: 400;
-
-
-    IMGES------
-    height: 20rem;
-
-
-    SOMBRA------
-    box-shadow: 15px 19px 76.6px #0000000f;
-
-
-*/
-
-
-
 
 
 :root {
   --bg: #0a0a0a;
    --bg-gradient: 
-        linear-gradient(90deg
-        ,rgba(2, 0, 36, 1) 0%,
-         rgba(1, 26, 54, 1) 100%);
-
+      radial-gradient(at 20% 15%, rgba(27, 104, 179, 0.35) 0px, transparent 50%),
+      radial-gradient(at 80% 35%, rgba(14, 73, 133, 0.25) 0px, transparent 40%),
+      radial-gradient(at 50% 80%, rgba(3, 27, 78, 0.4) 0px, transparent 60%);
+   
+        //linear-gradient(90deg
+        //,rgba(2, 0, 36, 1) 0%,
+        // rgba(1, 26, 54, 1) 100%);
+/* Opción 1: Degradado ambiental estilo "Aurora" / "Mesh" (Recomendado) */
+/*body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #030a16; /* Color base azul muy oscuro */
+  
+//}
 
   --surface: #111111;
   --text: #a3a3a3;
@@ -84,9 +41,16 @@ color: #8a8f8d; -------GRIS
 }
 
 body {
+  padding: 0;
   margin: 0;
   background: var(--bg-gradient);
   color: var(--text);
+  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
 }
 
 h1,
@@ -112,7 +76,7 @@ h2 {
 
 p {
   margin: 0;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 a {

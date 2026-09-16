@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 import './NavBar.scss';
-import { Mail, Menu, X } from 'lucide-react';
+import { Mail} from 'lucide-react';
 import { Linkedin, GitHub } from "../Icon/Icons.jsx"
-
+import IconMenu from "../Icon/IconMenu.jsx"
+import { motion } from "motion/react"
 
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);   
+  // 1. Iniciar en false para que empiece cerrado
 
   return (
     <header className="navbar-header">
@@ -18,37 +20,42 @@ const NavBar = () => {
 
         {/* MENÚ DE NAVEGACIÓN */}
         
-        <ul className={`navbar-menu ${isOpen ? 'is-active' : ''}`}>
+        <ul className={`navbar-menu ${!isOpen ? 'is-active' : ''}`}>
           
           <div className="closed">
-            <Link to="/"  onClick={() => setIsOpen(true)}><X/></Link>
+            <Link to="/"  onClick={() => setIsOpen(true)}> </Link>
           </div>
 
-            <Link to="/"          onClick={() => setIsOpen(true)}>Home  </Link>
-            <Link to="/about"     onClick={() => setIsOpen(true)}>About</Link>
-            <Link to="/projects"  onClick={() => setIsOpen(true)}>Projects</Link>
-            <Link to="/contact"   onClick={() => setIsOpen(true)}>Contact</Link>
+            <Link to="/"          onClick={() => setIsOpen(false)}>Home  </Link>
+            <Link to="/about"     onClick={() => setIsOpen(false)}>About</Link>
+            <Link to="/projects"  onClick={() => setIsOpen(false)}>Projects</Link>
+            <Link to="/contact"   onClick={() => setIsOpen(false)}>Contact</Link>
       
-      <div className="redes">
+          <div className="redes">
+              <Link to="/contact"><Linkedin/></Link>
+              <Link to="/contact"><Mail/></Link>
+              <Link to="/contact"><GitHub/></Link>
+          </div>
 
-          <Link to="/contact"><Linkedin/></Link>
-           <Link to="/contact"><Mail/></Link>
-            <Link to="/contact"><GitHub/></Link>
-          
-         
-      
-    </div>
-
-      </ul>
+        </ul>
       
 
         {/* BOTÓN HAMBURGUESA  */ }
       
-        
-        <Menu color="white" width={32}
-          className={`navbar-toggle ${isOpen ? 'is-active' : ''}`}
-          onClick={() => setIsOpen(!isOpen)}
-          />
+      <motion.div
+          className="x"
+          initial={{x: 100}}
+          animate={{ x: 0 }}
+          transition={{ ease: "easeOut", duration: 0.5 }}
+>
+
+          <IconMenu color="white" 
+              className={`navbar-toggle-btn ${isOpen ? 'is-active' : ''}`}
+              isOpen={isOpen} //2. PASO PROPIEDAD DEL ESTADO
+              onClick={() => setIsOpen(!isOpen)}
+              />
+
+       </motion.div>
       </nav>
 
     

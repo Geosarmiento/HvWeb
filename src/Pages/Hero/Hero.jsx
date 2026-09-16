@@ -6,8 +6,9 @@ import Button from "../../Components/Button/Button.jsx"
 
 const Hero = () => {
   return (
-
-    <div className='hero-container' id='hero'>
+<>
+    <section
+     className='hero-container' id='hero'>
 
     <h1>
          Graphic Designer 
@@ -21,14 +22,14 @@ const Hero = () => {
     combining design, technology, 3D and hands-on production.
     </p>
 
-<Button to="/projects"/>
+  <Button to="/projects"/>
 
 
 
    
-    </div>
+    </section>
 
-
+</>
 
   )
 }

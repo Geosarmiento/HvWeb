@@ -8,7 +8,6 @@ const Header = () => {
 
     <div className='header'>
       
-
         <NavBar/>    
 
     </div>

@@ -3,18 +3,29 @@
 .navbar-header {
   position: fixed;
   top: 0;
-  left: 0;
+  
   width: 100%;
+  height: 48px;
   z-index: 1000;
+
 }
 
 .navbar-container {
   max-width: 1200px;
-  margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
+
+  .redes{
+  display: none;
+}
+ 
+
+  .x{
+    display: none;
+  }
 }
 
 .navbar-logo {
@@ -48,6 +59,7 @@
 }
 
 /* Botón Hamburguesa */
+
 .navbar-toggle {
   display: none;
   flex-direction: column;
@@ -67,26 +79,22 @@
   transition: all 0.3s ease;
 }
 
-.redes{
-  display: none;
-}
- .closed{
-    display: none;
-    position: absolute;
-    top:18px;
-    right: 34px;
-  }
+
 
 
 
 
 /* Adaptación a dispositivos móviles */
 @media (max-width: 768px) {
+
+  .navbar-container{
+    .x{
+    display: block;
+  }
+  }
   .navbar-toggle {
     display: flex;
   }
-
-
 
   .closed{
     display: block;
@@ -100,6 +108,7 @@
     top: 600px;
 
    }
+  
 
 
   .navbar-menu {
@@ -150,4 +159,6 @@
    transition: all ease-in-out 0.5s;
 
   }
+
+  
 }

@@ -2,6 +2,7 @@
 
 import {  EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from "react-router-dom"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,11 +12,11 @@ import 'swiper/css/scrollbar';
 import "./Slider1.scss"
 
 const projectList = [
-  { id: 1, name: "Design Graphic", role: "Visual Creative", image: "/img/design.png" },
-  { id: 2, name: "Frontend Design", role: "Interface & Experience", image: "/img/frontend.png" },
-  { id: 3, name: "Design 3D", role: "Modeling and Render", image: "/img/3d.png" },
-  { id: 4, name: "Branding", role: "Visual Identid", image: "/img/branding.png" },
-  { id: 5, name: "Web App", role: "Modern Interface", image: "/img/webApp.png" },
+  { id: 1, name: "Design Graphic", role: "Visual Creative", image: "/img/design.png" , link :"/design"},
+  { id: 2, name: "Frontend Design", role: "Interface & Experience", image: "/img/frontend.png", link :"/frontend" },
+  { id: 3, name: "Design 3D", role: "Modeling and Render", image: "/img/3d.png", link :"/3d" },
+  { id: 4, name: "Branding", role: "Visual Identid", image: "/img/branding.png", link :"/branding" },
+  { id: 5, name: "Web App", role: "Modern Interface", image: "/img/webApp.png", link :"/webApp" },
 ];
 
 const Slider1 = () => {
@@ -61,6 +62,9 @@ const Slider1 = () => {
       
 {projectList.map((member) => (
           <SwiperSlide key={member.id}>
+
+
+            <Link to={member.link}>
           
               <div className="title_container_card">
 
@@ -75,7 +79,7 @@ const Slider1 = () => {
               </div>
 
               </div>
-             
+             </Link>
               
            
            

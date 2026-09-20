@@ -9,6 +9,14 @@ import NotFound from "../Pages/NotFound/NotFound";
 import { AnimatePresence } from "motion/react";
 import PageTransition from "./PageTransicion.jsx";
 
+import PageDesign from "../Pages/PageDesign/PageDesign.jsx";
+import PageWebApp from "../Pages/PageWebApp/PageWebApp.jsx"; 
+import PageBranding from "../Pages/PageBranding/PageBranding.jsx"; 
+import PageFrontend from "../Pages/PageFrontend/PageFrontend.jsx"; 
+import PageThreeD from "../Pages/PageThreeD/PageThreeD.jsx";
+
+
+
 function AppRoutes() {
   const location = useLocation();
   return (
@@ -23,7 +31,15 @@ function AppRoutes() {
             <Route path="/projects" element={<PageTransition><Projects /></PageTransition>}/>
             <Route path="/contact"  element={<PageTransition><Contact /></PageTransition>}/>
             <Route path="*" element={<PageTransition><NotFound /></PageTransition>}/>
+            
+            <Route path="/design" element={<PageTransition><PageDesign /></PageTransition>}/> 
+            <Route path="/frontend" element={<PageTransition><PageFrontend /></PageTransition>}/> 
+            <Route path="/3d" element={<PageTransition><PageThreeD /></PageTransition>}/> 
+            <Route path="/branding" element={<PageTransition><PageBranding /></PageTransition>}/>
+            <Route path="/webApp" element={<PageTransition><PageWebApp /></PageTransition>}/>
+
           </Route>
+
         </Routes>
 
     </AnimatePresence>

@@ -1,6 +1,6 @@
 
 
-import "../Icon/IconMenu.scss"
+import "./IconMenu.scss"
 
 
 const IconMenu = ( { isOpen, onClick } ) => {

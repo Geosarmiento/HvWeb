@@ -5,7 +5,6 @@ import Slider1 from "../../Components/Slider/Slider1.jsx"
 const Projects = () => {
 
   
-
   return (
     <>
     <section className="project-container">
@@ -14,9 +13,7 @@ const Projects = () => {
 
             <div className="intro_project">
               <h1>Projects</h1>
-              <p>Skills that combine design, technology, and creativity.
-
-              </p>
+              <p>Skills that combine design, technology, and creativity.</p>
         
             
             </div>

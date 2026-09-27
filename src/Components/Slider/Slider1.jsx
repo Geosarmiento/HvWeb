@@ -1,8 +1,10 @@
 /*import Swiper core and required modules*/
 
-import {  EffectCoverflow } from 'swiper/modules';
+import { EffectCoverflow } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from "react-router-dom"
+
+import { projects } from "../../Data/ProjectData"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -11,13 +13,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import "./Slider1.scss"
 
-const projectList = [
-  { id: 1, name: "Design Graphic", role: "Visual Creative", image: "/img/design.png" , link :"/design"},
-  { id: 2, name: "Frontend Design", role: "Interface & Experience", image: "/img/frontend.png", link :"/frontend" },
-  { id: 3, name: "Design 3D", role: "Modeling and Render", image: "/img/3d.png", link :"/3d" },
-  { id: 4, name: "Branding", role: "Visual Identid", image: "/img/branding.png", link :"/branding" },
-  { id: 5, name: "Web App", role: "Modern Interface", image: "/img/webApp.png", link :"/webApp" },
-];
+
 
 const Slider1 = () => {
   return (
@@ -60,30 +56,28 @@ const Slider1 = () => {
       /*<SwiperSlide>Slide 4</SwiperSlide>
       */}
       
-{projectList.map((member) => (
+{projects.map((member) => (
+
           <SwiperSlide key={member.id}>
-
-
             <Link to={member.link}>
-          
-              <div className="title_container_card">
+                <div className="title_container_card">
 
-              <img className="imagenes"
-                src={member.image}
-                alt={member.name}
-              />
+                <img className="imagenes"
+                  src={member.image}
+                  alt={member.name}
+                />
 
-              <div className="title_container">
-                <h3 className="title">{member.name}</h3>
-                <p className="parafo">{member.role}</p>
-              </div>
+                <div className="title_container">
+                  <h3 className="title">{member.name}</h3>
+                  <p className="parafo">{member.role}</p>
+                </div>
 
-              </div>
+                </div>
              </Link>
-              
-           
-           
+                       
           </SwiperSlide>
+
+
         ))}
 
     </Swiper>

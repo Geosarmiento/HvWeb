@@ -1,0 +1,95 @@
+@use "../../styles/_globales.scss" as *;
+
+
+.pageThreeD-container{
+  width: 100%;
+  height: auto;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  //align-items: center;
+  //text-align: center;
+    padding: 8px;
+
+   p{
+      margin: 0px auto;
+      padding: 12px 24px;
+    }
+
+    .intro_PageThreeD{
+        width: 100%;
+        height: auto;
+        margin-top: 90px;
+        margin-bottom: 35px;
+        text-align: center;
+
+        h1{
+            padding: 16px;
+        }
+        p{
+            margin-top: -18px;
+        }
+
+        
+    }
+     
+}
+
+
+
+
+.imgThreeD{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    justify-content: center;
+
+    .img_container{
+        overflow: hidden;
+        
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+         object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+
+
+    img:hover{
+         transform: scale(1.3);
+
+
+   }
+
+}
+
+//*Destop*//
+
+@media (min-width: 1024px) {
+
+  
+.imgThreeD{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    justify-content: center;
+
+    
+    img{
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+         object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+
+}
+}

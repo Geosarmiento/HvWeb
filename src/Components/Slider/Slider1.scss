@@ -24,12 +24,11 @@
     &:not(.swiper-slide-active) {
       opacity: 0.5 !important; /* Reduce la opacidad de los lados */
       filter: grayscale(80%) !important; /* Opcional: convierte en escala de grises los lados */
-    
+       pointer-events: none; //Desactiva el evento d la tarjeta
     }
 
     /* Tarjeta activa (centro) */
     &.swiper-slide-active {
-
       opacity: 1 !important;
       filter: grayscale(0%) !important;
       box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);

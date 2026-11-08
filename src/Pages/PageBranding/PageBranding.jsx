@@ -1,9 +1,13 @@
+import Scena from "../Configurator/Scena";
+import "./PageBranding.scss"
+
 
 const PageBranding = () => {
   return (
-    <div>
-      <p>Welcome </p>
-        <h1> Branding Page</h1>
+    <div className="page_branding">
+      
+
+        <Scena/>
     </div>
   )
 }
